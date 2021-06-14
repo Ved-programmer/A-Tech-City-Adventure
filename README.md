@@ -2,9 +2,9 @@
 
 <center><strong>
 
-# <font size = "7"> A Building Adventure </font>
+# <font size = "7"> A Tech City Adventure </font>
 
-<font size = "5"> A Building Adventure is a game which starts with a fictional scenario of building a city and you explore different islands in search for components to build it with.</font>
+<font size = "5"> A Tech City Adventure is a game which starts with a fictional scenario of building a space city and you explore different plantets in search for components to build it with.</font>
 
 <br>
 
@@ -18,11 +18,11 @@
 
 <ul>
 
-This game starts with a task of building a city, and your mission is to go out and explore to find tools to build it with. To do this you must sail on your boat to discover different islands which will help you acquire parts.
+This game starts with a task of building a futuristic space city, and your mission is to go out and explore to find tools to build it with. To do this you must sail on your space ship to discover different plantets which will help you acquire parts.
 
-However, it's not that easy, some tools might not be compatible, some might not be perfect for the job. The possibilities are endless and the sky is the limit so let your imagination go wild
+However, it's not that easy, some tools might not be compatible, some might not be perfect for the job. The possibilities are endless and the sky is the limit so let your imagination go wild.
 
-Put your design skills to test and come up with the best design possible.
+Put your design skills to test and come up with the best design.
 
 </ul>
 
