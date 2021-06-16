@@ -4,7 +4,7 @@
 
 # <font size = "7"> A Tech City Adventure </font>
 
-<font size = "5"> A Tech City Adventure is a game which starts with a fictional scenario of building a space city and you explore different plantets in search for components to build it with.</font>
+<font size = "5"> A Tech City Adventure is a game which starts with a fictional scenario of building a space city and you explore different planets in search for components to build it with.</font>
 
 <br>
 
