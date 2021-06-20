@@ -1,0 +1,61 @@
+.main {
+    position: relative;
+    height : 97.75vh;
+    margin : 0
+}
+
+.markets {
+    display: grid;
+    grid-column-gap: 1vw;
+    grid-row-gap: 4vh;
+    width : 95vw;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.market {
+    display: inline-grid;
+    width : 30vw;
+    height : 40vh;
+    line-height: 35vh;
+    text-align : center;
+}
+
+.spaceShip {
+    grid-column-start: 1;
+    background-color: red;
+}
+
+.energySource {
+    grid-column-start: 2;
+    background-color: blue;
+}
+
+.spaceAirport {
+    grid-column-start: 3;
+    background-color: green;
+}
+
+.spaceSuits {
+    grid-column-start: 1;
+    background-color: rgb(202, 206, 0);
+}
+
+.back {
+    grid-column-start: 2;
+    background-color: purple;
+}
+
+.weapons {
+    grid-column-start: 3;
+    background-color: rgba(0, 226, 196, 0.918);
+}
+
+.marketText {
+    font-size: 2em;
+}
