@@ -1,1 +1,66 @@
+body {
+    background-color:black;
+    color:white;
+}
 
+.header {
+    text-align: center;
+    font-size: 4em;
+    line-height:0;
+}
+
+.infoContainer {
+    display: flex;
+    height : 20vh;
+    background-color :#5D82C2;
+    width : 90%;
+    color : #00ff6e;
+    font-size: 2.25em;
+
+    align-items:center;
+    justify-content:center;
+
+    border: 5px solid red;
+}
+
+#completionStatus{
+    font-size: x-large;
+    color:black;
+    background-color:white;
+}
+
+.goLocation {
+    display: flex;
+
+    width : 10vw;
+    height : 10vh;
+    background-color:red;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid blue;
+}
+
+.right{
+    position :absolute;
+    right : 0;
+    display:inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+    line-height:9vh;
+}
+
+.left{
+    display:inline-block;
+    margin-left : 0;
+    vertical-align: middle;
+    text-align: center;
+
+    line-height:9vh;
+}
+
+a{
+    color:white;
+    text-decoration : none;
+    font-size : 1.1em;
+}
