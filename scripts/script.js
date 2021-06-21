@@ -1,20 +1,22 @@
-var result = document.getElementById("completionStatus")
-result.innerHTML = "Not Completed!"
+var allCompleted = "All Completed! You have finished the game!";
 
-collected = {
-    "energySource":null,
-    "spaceAirport":null,
-    "spaceShip":null,
-    "spaceSuits":null,
-    "weapons":null,
-}
+// console.log(localStorage)
 
-for (const collectedCategory in collected) {
+var categories = JSON.parse(localStorage['categories']);
+// console.log(categories)
+
+for (const collectedCategory of categories) {
+    
     let currentTag = document.getElementById(collectedCategory)
-    collectedItem = collected[collectedCategory]
-    if (collectedItem == null){
+    collectedItem = localStorage[collectedCategory]
+    
+    // console.log()
+    if (collectedItem == "null"){
         collectedItem = "Not Collected"
+        allCompleted = "There are materials you need to collect, you should go to the market"
     }
     currentTag.innerHTML = collectedItem
-  }
+}
+document.getElementById("completionStatus").innerHTML = allCompleted
+
 
