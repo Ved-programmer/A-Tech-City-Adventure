@@ -1,0 +1,46 @@
+body {
+    background-color:black;
+    color:white;
+}
+
+.header {
+    text-align: center;
+    font-size: 4em;
+    line-height:0;
+}
+
+.infoContainer {
+    display: flex;
+    height : 30vh;
+    background-color :#5D82C2;
+    width : 90%;
+    color : #00ff6e;
+    font-size: 2.25em;
+
+    align-items:center;
+    justify-content:center;
+
+    border: 5px solid red;
+}
+
+#choosingStatus{
+    font-size: x-large;
+    color:black;
+    background-color:white;
+}
+
+button{
+    width : 70%;
+    margin-bottom : 20vh;
+    height : 7vh;
+    font-size: 1.3em;
+    font-weight : bold;
+}
+
+a {
+    background-color : blue;
+    color:yellowgreen;
+    font-size : 3em;
+    padding : 20px;
+
+}
