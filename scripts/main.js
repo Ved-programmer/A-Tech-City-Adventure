@@ -1,4 +1,4 @@
-function validateOption(option) {
+function validateOption(option, optionCategory) {
     console.log(option);
 
     let conditions = templateItems[option];
@@ -8,7 +8,7 @@ function validateOption(option) {
     let statusTag = document.getElementById("choosingStatus")
 
     for(category of categories){
-        // console.log(category)
+        console.log(category)
         currentlyChosen = localStorage[category]
         toBeChosenRequirement = conditions[category]
 
@@ -23,6 +23,7 @@ function validateOption(option) {
 
     if(checkTrue){
         statusTag.innerHTML = "You successfully bought " + option
+        localStorage[optionCategory] = option
     }
 
 }
