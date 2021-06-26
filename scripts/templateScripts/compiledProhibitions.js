@@ -1,4 +1,6 @@
-var energySource = {
+var compiledProhibitions = {
+    "null" : {},
+
     "Hydraulic Power" : {
         "energySource":[], 
         "spaceAirport":[], 
@@ -21,10 +23,8 @@ var energySource = {
         "spaceShip":[], 
         "spaceSuits":[], 
         "weapons":[]
-    }
-};
+    },
 
-var spaceAirport = {
     "aqua aerodrome" : {
         "energySource":["Electrical Energy", "Bio Mass"], 
         "spaceAirport":[], 
@@ -47,10 +47,8 @@ var spaceAirport = {
         "spaceShip":[], 
         "spaceSuits":[], 
         "weapons":[]
-    }
-};
+    },
 
-var spaceShip = {
     "Thunder Runner" : {
         "energySource":["Hydraulic Power" ,"Bio Mass"], 
         "spaceAirport":["aqua aerodrome"], 
@@ -73,10 +71,8 @@ var spaceShip = {
         "spaceShip":[], 
         "spaceSuits":[], 
         "weapons":[]
-    }
-};
+    },
 
-var spaceSuits = {
     "Explorer's Suit" : {
         "energySource":["Bio Mass"], 
         "spaceAirport":[], 
@@ -99,10 +95,7 @@ var spaceSuits = {
         "spaceShip":[], 
         "spaceSuits":[], 
         "weapons":[]
-    }
-};
-
-var weapons = {
+    },
     "Water Blaster" : {
         "energySource":["Electrical Energy", "Bio Mass"], 
         "spaceAirport":[], 
@@ -128,3 +121,29 @@ var weapons = {
     }
 };
 
+function checkIfAllowed(option){
+    var categories = JSON.parse(localStorage['categories']);
+
+    console.log("start")
+
+    for(category of categories){
+        console.log(category)
+
+        current = localStorage[category]
+
+        console.log(current)
+
+        currentRestrictions = compiledProhibitions[current]
+
+        console.log(currentRestrictions)
+
+        for(const currentCategory in currentRestrictions){
+            if(currentRestrictions[currentCategory].includes(option)){
+                return [false, current];
+            }
+        }
+
+        
+    }
+    return [true];
+}
