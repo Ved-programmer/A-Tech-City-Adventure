@@ -21,10 +21,14 @@ function validateOption(option, optionCategory) {
         }
     }
 
+    allowenceCheck = checkIfAllowed(option);
+    if(!(allowenceCheck[0])){
+        checkTrue = false;
+        statusTag.innerHTML = "You have bought " + allowenceCheck[1]  + " which is not compatible with " + option
+    }
+
     if(checkTrue){
         statusTag.innerHTML = "You successfully bought " + option
         localStorage[optionCategory] = option
     }
-
 }
-
