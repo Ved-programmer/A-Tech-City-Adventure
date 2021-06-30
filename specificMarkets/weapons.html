@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Weapons</title>
+    <link rel = "stylesheet" href = "../styles/marketProducts.css">
+</head>
+<body>
+    <h1 class = "header"><u>&nbsp;&nbsp;Buy Weapons&nbsp;&nbsp;</u></h1>
+
+    <br>
+ 
+    <div align = "center">
+        <p id = "choosingStatus">Choose the weapon you want</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div align = "center">
+    
+        <div class = "infoContainer">
+            <p>Water Blaster, doesn't work with "Bio Mass", "Electrical Energy", "Thunder Runner" and "Giant Tic Tac"</p>
+        </div>
+        <button type="button" onclick="validateOption('Water Blaster', 'weapons')">Buy Water Blaster</button>
+
+        
+        <div class = "infoContainer">
+            <p>Flame Thrower, doesn't work with "Hydraulic Power" and "Sailing Ship"</p>
+        </div>
+        <button type="button" onclick="validateOption('Flame Thrower', 'weapons')">Buy Flame Thrower</button>
+
+        
+        <div class = "infoContainer">
+            <p>Electric Shock, doesn't work with "Hydraulic Power" and "Bio Mass"</p>
+        </div>
+        <button type="button" onclick="validateOption('Electric Shock', 'weapons')">Buy Electric Shock</button>
+
+
+        
+        <div>
+            <a href = "../marketPlace.html">
+                Go Back
+            </a>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+<script src="../scripts/templateScripts/weapons.js"></script>
+<script src="../scripts/templateScripts/compiledProhibitions.js"></script>
+<script src="../scripts/main.js"></script>
+</html>
