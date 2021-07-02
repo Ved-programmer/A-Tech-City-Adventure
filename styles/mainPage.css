@@ -5,7 +5,7 @@ body {
 
 .centerAlign{
     margin: auto;
-    width: 50%;
+    width: 90%;
     border: 3px solid green;
     background-color:rgb(68, 174, 209);
 
@@ -19,3 +19,48 @@ body {
     text-decoration: none;
 
 }
+
+.header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 0em;
+    /* height : 20vh; */
+    color: white;
+    font-family: 'jokerman';
+    font-size: 2em;
+    background-color: black;
+    z-index: 1;
+    /* text-align:center; */
+    display: inline-block;
+}
+
+.subTitle{
+    width: 80%;
+    font-size : 2em;
+}
+
+.exploreText{
+    font-size : 3em;
+}
+
+.descriptionContainer{
+    background-color: #2E5EFF;
+    color : #caca5d;
+    padding: 1vh;
+}
+
+
+.infoContainer{
+    padding: 0.5vh;
+    background-color : #FFCE2E; 
+    color:#892EFF;
+    font-size: 1.25em;
+    width : 60vw;
+    margin : auto;
+    border: 5px solid red;
+
+}
+
+
